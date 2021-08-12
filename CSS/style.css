@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(0, 0%, 98%);
+}
+
+:root {
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+}
+
+h2 {
+    font-size: 2rem;
+    color: hsl(234, 12%, 34%);
+}
+
+p {
+    font-size: 1.26rem;
+}
+
+img {
+    width: 64px;
+    height: 64px;
+    margin-top: 3rem;
+    float: right;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.head {
+    width: 50rem;
+    height: auto;
+    margin-top: 4rem;
+    align-items: center;
+}
+
+.heading {
+    font-size: 3rem;
+    opacity: 50%;
+    font-weight: 1;
+    text-align: center;
+}
+
+.heading_bold {
+    font-size: 3.3rem;
+    text-align: center;
+    color: hsl(234, 12%, 34%);
+    font-weight: bolder;
+}
+
+.head_para {
+    text-align: center;
+    font-size: 1.35rem;
+    opacity: 40%;
+    font-weight: bolder;
+    margin-top: 1.5rem;
+}
+
+.components {
+    display: flex;
+    width: 74%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 4rem;
+}
+
+.component_group {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.component1 {
+    width: 34rem;
+    padding: 3rem;
+    background: #fff;
+    border-radius: 1rem;
+    border-top: 4px solid hsl(180, 62%, 55%);
+    box-shadow: -1px 0px 30px 1px rgb(189 187 187 / 33%);
+}
+
+.component4 {
+    width: 34rem;
+    padding: 3rem;
+    border-radius: 1rem;
+    background: #fff;
+    box-shadow: -1px 0px 30px 1px rgb(189 187 187 / 33%);
+    border-top: 4px solid hsl(212, 86%, 64%);
+}
+
+.component2 {
+    width: 34rem;
+    padding: 3rem;
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: -1px 0px 30px 1px rgb(189 187 187 / 33%);
+    border-top: 4px solid hsl(0, 78%, 62%);
+}
+
+.component3 {
+    width: 34rem;
+    padding: 3rem;
+    background: #fff;
+    border-radius: 1rem;
+    margin-top: 2.5rem;
+    border-top: 4px solid hsl(34, 97%, 64%);
+    box-shadow: -1px 0px 30px 1px rgb(189 187 187 / 33%);
+}
+
+@media only screen and (max-width: 1475px) {
+    body {
+        width: auto;
+        height: auto;
+    }
+    .head {
+        width: 30rem;
+    }
+    .components {
+        flex-direction: column;
+        width: auto;
+    }
+    .component1 {
+        margin-bottom: 2.5rem;
+        width: 30rem;
+    }
+    .component2,
+    .component3 {
+        width: 30rem;
+    }
+    .component4 {
+        margin-top: 2.5rem;
+        width: 30rem;
+        margin-bottom: 2.5rem;
+    }
+}
